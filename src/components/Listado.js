@@ -14,7 +14,8 @@ export const Listado = ({ listadoState, setListadoState }) => {
 
   useEffect(() => {
     conseguirPeliculas();
-  }, [conseguirPeliculas]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const borrarPeli = (id) => {
     let pelis_almacenadas = conseguirPeliculas();
