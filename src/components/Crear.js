@@ -17,6 +17,11 @@ export const Crear = ({ setListadoState }) => {
     let titulo = target.titulo.value;
     let descripcion = target.descripcion.value;
 
+    if (titulo === '' || descripcion === '') {
+      alert("Por favor, completa todos los campos antes de guardar.");
+      return;
+    }
+
     let peli = {
       id: new Date().getTime(),
       titulo,
@@ -30,6 +35,8 @@ export const Crear = ({ setListadoState }) => {
     });
 
     GuardarEnStorage("pelis", peli);
+
+  
   }
 
   return (
