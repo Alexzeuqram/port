@@ -33,7 +33,7 @@ function App() {
 
       <footer className="footer">
         &copy; Jared Marquez{" "}
-        <a href="https://courageous-toffee-4be3ce.netlify.app/portafolio">zeuqram.com</a>
+        <a href="https://courageous-toffee-4be3ce.netlify.app">zeuqram.com</a>
       </footer>
     </div>
   );
